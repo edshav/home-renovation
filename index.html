@@ -28,10 +28,7 @@
       h1 {
         font-size: 24px;
         margin-bottom: 12px;
-      }
-
-      h1 .second-line {
-        color: #555;
+        line-height: 1.2;
       }
 
       h2 {
@@ -75,19 +72,25 @@
         height: auto;
         border-radius: 6px;
         display: block;
+        cursor: pointer;
       }
 
-      /* Lists */
+      /* Flex section */
+      .flex-section {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
       ul {
         list-style: none;
-        padding-left: 0;
       }
 
       li {
         margin-bottom: 8px;
       }
 
-      /* CTA bottom */
+      /* Sticky CTA */
       .sticky-cta {
         position: fixed;
         bottom: 0;
@@ -105,19 +108,36 @@
         font-weight: bold;
       }
 
-      /* spacing bottom so content not hidden */
       .spacer {
         height: 70px;
       }
 
       @media (min-width: 768px) {
+        h1 {
+          font-size: 32px;
+        }
+
         .gallery {
           grid-template-columns: repeat(3, 1fr);
         }
 
-        h1 {
-          font-size: 32px;
+        .flex-section {
+          flex-direction: row;
+          justify-content: space-between;
         }
+
+        .flex-section > div {
+          width: 48%;
+        }
+      }
+
+      .cta-section {
+        margin-top: 32px;
+        text-align: center;
+      }
+
+      .cta-text {
+        margin-bottom: 16px;
       }
     </style>
   </head>
@@ -126,16 +146,15 @@
     <div class="container">
       <!-- HERO -->
       <section class="hero">
-        <div class="badge">🔥 10% OFF — LIMITED TIME</div>
+        <div class="badge">🔥 10% OFF – Limited Time</div>
+
         <h1>
-          <span>Home Renovation</span><br />
-          <span class="second-line">Any Complexity</span>
+          Home Renovation <br />
+          Any Project Size
         </h1>
-        <p>
-          Looking for a team that delivers fast, clean, and high-quality
-          results?
-        </p>
-        <p>We handle everything from small jobs to full home renovations.</p>
+
+        <p>Need reliable home renovation services?</p>
+        <p>We deliver clean, fast, high-quality results.</p>
 
         <a href="tel:+15878737399" class="btn">📞 Call Now</a>
       </section>
@@ -156,29 +175,39 @@
         </div>
       </section>
 
-      <!-- SERVICES -->
-      <section>
-        <h2>💪 Our Services</h2>
-        <ul>
-          <li>✔ Flooring: laminate, vinyl, hardwood, parquet</li>
-          <li>✔ Tile installation (floors & walls)</li>
-          <li>✔ Framing & drywall</li>
-          <li>✔ Taping, mudding & painting</li>
-          <li>✔ Door installation</li>
-          <li>✔ Furniture assembly</li>
-        </ul>
+      <!-- SERVICES + WHY -->
+      <section class="flex-section">
+        <div>
+          <h2>💪 Our Services</h2>
+          <ul>
+            <li>✔ Flooring: laminate, vinyl, hardwood, parquet</li>
+            <li>✔ Tile installation (floors & walls)</li>
+            <li>✔ Framing & drywall</li>
+            <li>✔ Taping, mudding & painting</li>
+            <li>✔ Door installation</li>
+            <li>✔ Furniture assembly</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>💯 Why Choose Us</h2>
+          <ul>
+            <li>✅ Clean and professional results</li>
+            <li>✅ Always on schedule</li>
+            <li>✅ Skilled and experienced team</li>
+            <li>✅ No hidden costs</li>
+            <li>✅ Free estimates</li>
+          </ul>
+        </div>
       </section>
 
-      <!-- WHY -->
-      <section>
-        <h2>💯 Why Choose Us</h2>
-        <ul>
-          <li>✅ Clean and professional work</li>
-          <li>✅ Always on schedule</li>
-          <li>✅ Skilled team with experience</li>
-          <li>✅ No hidden costs</li>
-          <li>✅ Free estimates</li>
-        </ul>
+      <section class="cta-section">
+        <h2>
+          ⏳ Book Now <br />
+          Limited Time Offer
+        </h2>
+        <p class="cta-text">Call now for a fast response</p>
+        <a href="tel:+15878737399" class="btn">📞 Call Now</a>
       </section>
 
       <!-- CONTACT -->
