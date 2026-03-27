@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Renovation Services</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        line-height: 1.5;
+        color: #222;
+        background: #fff;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 16px;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 12px;
+      }
+
+      h1 .second-line {
+        color: #555;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin: 24px 0 12px;
+      }
+
+      .badge {
+        display: inline-block;
+        background: #ff3b30;
+        color: #fff;
+        padding: 6px 10px;
+        font-weight: bold;
+        margin-bottom: 12px;
+      }
+
+      .hero p {
+        margin-bottom: 12px;
+      }
+
+      .btn {
+        display: inline-block;
+        background: #000;
+        color: #fff;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 6px;
+      }
+
+      /* Gallery */
+      .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin-top: 16px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+        display: block;
+      }
+
+      /* Lists */
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      /* CTA bottom */
+      .sticky-cta {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #000;
+        text-align: center;
+        padding: 12px;
+      }
+
+      .sticky-cta a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      /* spacing bottom so content not hidden */
+      .spacer {
+        height: 70px;
+      }
+
+      @media (min-width: 768px) {
+        .gallery {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        h1 {
+          font-size: 32px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="badge">🔥 10% OFF — LIMITED TIME</div>
+        <h1>
+          <span>Home Renovation</span><br />
+          <span class="second-line">Any Complexity</span>
+        </h1>
+        <p>
+          Looking for a team that delivers fast, clean, and high-quality
+          results?
+        </p>
+        <p>We handle everything from small jobs to full home renovations.</p>
+
+        <a href="tel:+15878737399" class="btn">📞 Call Now</a>
+      </section>
+
+      <!-- GALLERY -->
+      <section>
+        <div class="gallery">
+          <img src="images/img_01.webp" loading="lazy" />
+          <img src="images/img_02.webp" loading="lazy" />
+          <img src="images/img_03.webp" loading="lazy" />
+          <img src="images/img_04.webp" loading="lazy" />
+          <img src="images/img_05.webp" loading="lazy" />
+          <img src="images/img_06.webp" loading="lazy" />
+          <img src="images/img_07.webp" loading="lazy" />
+          <img src="images/img_08.webp" loading="lazy" />
+          <img src="images/img_09.webp" loading="lazy" />
+          <img src="images/img_10.webp" loading="lazy" />
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section>
+        <h2>💪 Our Services</h2>
+        <ul>
+          <li>✔ Flooring: laminate, vinyl, hardwood, parquet</li>
+          <li>✔ Tile installation (floors & walls)</li>
+          <li>✔ Framing & drywall</li>
+          <li>✔ Taping, mudding & painting</li>
+          <li>✔ Door installation</li>
+          <li>✔ Furniture assembly</li>
+        </ul>
+      </section>
+
+      <!-- WHY -->
+      <section>
+        <h2>💯 Why Choose Us</h2>
+        <ul>
+          <li>✅ Clean and professional work</li>
+          <li>✅ Always on schedule</li>
+          <li>✅ Skilled team with experience</li>
+          <li>✅ No hidden costs</li>
+          <li>✅ Free estimates</li>
+        </ul>
+      </section>
+
+      <!-- CONTACT -->
+      <section>
+        <h2>📞 Contact</h2>
+        <p>
+          <strong>Phone:</strong> <a href="tel:+15878737399">587-873-7399</a>
+        </p>
+        <p><strong>Email:</strong> v.v@sharpedgeexterior.com</p>
+      </section>
+
+      <div class="spacer"></div>
+    </div>
+
+    <!-- STICKY CTA -->
+    <div class="sticky-cta">
+      <a href="tel:+15878737399">📞 Call Now</a>
+    </div>
+  </body>
+</html>
