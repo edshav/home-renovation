@@ -50,7 +50,7 @@ This project is a static landing page and does not require or implement any form
 
 ## ⚡ Performance Tips
 
-- Use compressed images (`.webp`, ~1200px width)
+- Use compressed images (`.webp`, ~600px width)
 - Keep file sizes small for faster loading
 - Avoid adding unnecessary scripts
 
