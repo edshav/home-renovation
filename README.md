@@ -1,4 +1,4 @@
-# Home Renovation Landing Page
+Welcome to the 2026 API
 
 Simple, fast, and mobile-first landing page built for advertising on platforms like Kijiji.
 
@@ -57,4 +57,3 @@ Drive users from ads to a simple page where they can quickly view work examples 
 ---
 
 Built for simplicity, speed, and conversion.
-```---
