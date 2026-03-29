@@ -44,6 +44,10 @@ This project is intended to be deployed via GitHub Pages:
 3. Select the `main` branch
 4. Your site will be available at: https://<username>.github.io/<repo-name>/
 
+## 🔒 Authentication
+
+This project is a static landing page and does not require or implement any form of user authentication. All content is publicly accessible.
+
 ## ⚡ Performance Tips
 
 - Use compressed images (`.webp`, ~1200px width)
@@ -57,4 +61,3 @@ Drive users from ads to a simple page where they can quickly view work examples 
 ---
 
 Built for simplicity, speed, and conversion.
-```---
